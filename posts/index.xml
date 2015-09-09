@@ -1,13 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ed copony</title>
-    <link>http://ecopony.github.io/</link>
-    <description>Recent content on ed copony</description>
+    <title>Posts on ed copony</title>
+    <link>http://ecopony.github.io/posts/</link>
+    <description>Recent content in Posts on ed copony</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Sep 2015 08:09:10 -0700</lastBuildDate>
-    <atom:link href="http://ecopony.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ecopony.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>side projects</title>
+      <link>http://ecopony.github.io/posts/side-projects/</link>
+      <pubDate>Thu, 03 Sep 2015 15:52:20 -0700</pubDate>
+      
+      <guid>http://ecopony.github.io/posts/side-projects/</guid>
+      <description>
+
+&lt;h3 id=&#34;velofight:25ea7f7c6471d04306c4889ea469f667&#34;&gt;Velofight!&lt;/h3&gt;
+
+&lt;h4 id=&#34;online-fantasy-cycling-game-and-community:25ea7f7c6471d04306c4889ea469f667&#34;&gt;Online fantasy cycling game and community&lt;/h4&gt;
+
+&lt;p&gt;Velofight! started when my friend and colleague Mike Westover came down from Seattle to visit me in Portland. We met at a coffee shop and he pitched his idea. He knew someone in Seattle who had been running a fantasy cycling game for his friends out of an Excel spreadsheet for a number of years. Mike&amp;rsquo;s idea: Take the game out of the spreadsheet, put it online in time for the Tour de France, do a little advertising for it, slap ads on it, and see what happens. And, as Mike is skilled at doing, he made it sound really simple. It would have to be, since we had about two weeks before the Tour de France started.&lt;/p&gt;
+
+&lt;p&gt;We had about a week to get user account creation and roster creation built and the app deployed. This would allow people to get signed up and make their teams. Then, we had about a week until the first stage, so we had that long to get individual stage scoring built. From there, no problem! We had three weeks to finish the final scoring. The application also emailed participants about daily results, so there was that piece, and we gave away killer Velofight! socks and t-shirts for top performers.&lt;/p&gt;
+
+&lt;p&gt;Velofight! was a blast. We used Rails for the app, we deployed to AWS, we managed the work with Pivotal Tracker. I was the main developer, Mike handled deployment, operations, and some light development. We got all parts of the site up in time, working after hours when we were done with our day jobs. Despite the mad dash, we did test-driven development, had great test coverage, and only a couple, very minor defects make it to production. The users had a blast, and we made improvements for the Tour of Spain, which was about a month later.&lt;/p&gt;
+
+&lt;p&gt;Over the next winter we added support for single-day races and added series support for multiple competitions throughout the year. Users could invite their friends to Velofight!, and many did. We had users all over the world.&lt;/p&gt;
+
+&lt;p&gt;We ran the site for four years, before time constraints on both of us led us to, sadly, shut it down. Our users thanked us &amp;ndash; some even said they would pay to play! Someday we might decide to bring back Velofight! on a different platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;mlb-gameday-api-go-version:25ea7f7c6471d04306c4889ea469f667&#34;&gt;MLB Gameday API (Go version)&lt;/h3&gt;
+
+&lt;p&gt;After using my Scala version of the API for a couple years (see the next side project below), I wanted an easier way to play with command-line apps. This led me to Go. I learned Go and had an alternate version of the API working in short order. Building with Go was a much simpler experience than Scala. It&amp;rsquo;s a great option for solving a lot of different kinds of problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ecopony/gamedayapi&#34;&gt;MLB Gameday API (in Go)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;mlb-gameday-api-scala-version:25ea7f7c6471d04306c4889ea469f667&#34;&gt;MLB Gameday API (Scala version)&lt;/h3&gt;
+
+&lt;p&gt;Wanting to learn Scala, and wanting to play with the free data that MLB makes available for fans to use, I developed an API to MLB Gameday using Scala. Scala has some cool features, the ability to do OO and more functional programming is nice. The language and the ecosystem is pretty complex, though. It takes a lot of room in your head, and can make some simple things harder than they need to be.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ecopony/scala-gameday-api&#34;&gt;MLB Gameday API (in Scala)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>skills</title>
+      <link>http://ecopony.github.io/posts/skills/</link>
+      <pubDate>Thu, 03 Sep 2015 15:52:09 -0700</pubDate>
+      
+      <guid>http://ecopony.github.io/posts/skills/</guid>
+      <description>&lt;p&gt;Here are a few, anyway.&lt;/p&gt;
+
+&lt;p&gt;Languages: Java, Ruby, Go, Scala, JavaScript, TypeScript, Dart, R, SQL&lt;/p&gt;
+
+&lt;p&gt;Libraries/Frameworks: Ruby on Rails, Play, Jersey, Ext JS, Angular 2, Node.js, Spring, Hibernate, AWS SDKs, jQuery&lt;/p&gt;
+
+&lt;p&gt;Build/Ops: Git, AWS, Chef, Puppet, Jenkins, Bamboo, Google Analytics, Maven, Rake, Capistrano&lt;/p&gt;
+
+&lt;p&gt;Other stuff: RabbitMQ, integration patterns, REST API design, Selenium, PostgreSQL, MySQL, HTML, CSS, XML, XSLT, Haml, Sass, Bootstrap&lt;/p&gt;
+
+&lt;p&gt;Techniques: Lean, agile, Kanban, lean startup, impact mapping, test-driven development, continuous integration and deployment&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>interests</title>
+      <link>http://ecopony.github.io/posts/interests/</link>
+      <pubDate>Thu, 03 Sep 2015 08:10:33 -0700</pubDate>
+      
+      <guid>http://ecopony.github.io/posts/interests/</guid>
+      <description>
+
+&lt;p&gt;I have many interests, and they are constantly shifting in priority. This is just a snapshot of a top few things at the moment.&lt;/p&gt;
+
+&lt;h4 id=&#34;amazon-web-services:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Amazon Web Services&lt;/h4&gt;
+
+&lt;p&gt;The rate at which AWS rolls out new services and iterates on existing ones boggles the mind. The Gateway API, Lambda and DynamoDB hold my gaze currently.&lt;/p&gt;
+
+&lt;h4 id=&#34;client-side-development:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Client-side development&lt;/h4&gt;
+
+&lt;p&gt;Web Components, Polymer, Angular 2, TypeScript, Dart, React&amp;hellip; the area of client-side technology is absolutely crazy right now. It&amp;rsquo;s fascinating and frustrating. Targets, libraries, frameworks are all moving so fast. Trying to pick your horse to get you through the next year or so is a task that will make your head spin.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been bouncing all over the place with the above technology, trying to decide what I should build my next round of side projects on. I&amp;rsquo;m liking the direction of Web Components, and am favoring tools and frameworks that are either working to implement what the standard looks like, or look like what the standard looks like.&lt;/p&gt;
+
+&lt;h4 id=&#34;offline-first-nobackend:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Offline-first / #nobackend&lt;/h4&gt;
+
+&lt;p&gt;Combining the previous two interests, I want to delve deeper into building client-side apps that go through the AWS Gateway API, through to AWS Lambda and Dynamo DB.&lt;/p&gt;
+
+&lt;h4 id=&#34;statistics:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Statistics&lt;/h4&gt;
+
+&lt;p&gt;Apache Spark looks super cool. R is awesome. Putting them together looks like it could be a powerful combination.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>work history</title>
@@ -110,92 +196,6 @@
 &lt;h2 id=&#34;sparks-com:809fe95aa1207f4a8c5ef148a739d7da&#34;&gt;Sparks.com&lt;/h2&gt;
 
 &lt;h4 id=&#34;software-developer-4:809fe95aa1207f4a8c5ef148a739d7da&#34;&gt;Software Developer&lt;/h4&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>side projects</title>
-      <link>http://ecopony.github.io/posts/side-projects/</link>
-      <pubDate>Thu, 03 Sep 2015 15:52:20 -0700</pubDate>
-      
-      <guid>http://ecopony.github.io/posts/side-projects/</guid>
-      <description>
-
-&lt;h3 id=&#34;velofight:25ea7f7c6471d04306c4889ea469f667&#34;&gt;Velofight!&lt;/h3&gt;
-
-&lt;h4 id=&#34;online-fantasy-cycling-game-and-community:25ea7f7c6471d04306c4889ea469f667&#34;&gt;Online fantasy cycling game and community&lt;/h4&gt;
-
-&lt;p&gt;Velofight! started when my friend and colleague Mike Westover came down from Seattle to visit me in Portland. We met at a coffee shop and he pitched his idea. He knew someone in Seattle who had been running a fantasy cycling game for his friends out of an Excel spreadsheet for a number of years. Mike&amp;rsquo;s idea: Take the game out of the spreadsheet, put it online in time for the Tour de France, do a little advertising for it, slap ads on it, and see what happens. And, as Mike is skilled at doing, he made it sound really simple. It would have to be, since we had about two weeks before the Tour de France started.&lt;/p&gt;
-
-&lt;p&gt;We had about a week to get user account creation and roster creation built and the app deployed. This would allow people to get signed up and make their teams. Then, we had about a week until the first stage, so we had that long to get individual stage scoring built. From there, no problem! We had three weeks to finish the final scoring. The application also emailed participants about daily results, so there was that piece, and we gave away killer Velofight! socks and t-shirts for top performers.&lt;/p&gt;
-
-&lt;p&gt;Velofight! was a blast. We used Rails for the app, we deployed to AWS, we managed the work with Pivotal Tracker. I was the main developer, Mike handled deployment, operations, and some light development. We got all parts of the site up in time, working after hours when we were done with our day jobs. Despite the mad dash, we did test-driven development, had great test coverage, and only a couple, very minor defects make it to production. The users had a blast, and we made improvements for the Tour of Spain, which was about a month later.&lt;/p&gt;
-
-&lt;p&gt;Over the next winter we added support for single-day races and added series support for multiple competitions throughout the year. Users could invite their friends to Velofight!, and many did. We had users all over the world.&lt;/p&gt;
-
-&lt;p&gt;We ran the site for four years, before time constraints on both of us led us to, sadly, shut it down. Our users thanked us &amp;ndash; some even said they would pay to play! Someday we might decide to bring back Velofight! on a different platform.&lt;/p&gt;
-
-&lt;h3 id=&#34;mlb-gameday-api-go-version:25ea7f7c6471d04306c4889ea469f667&#34;&gt;MLB Gameday API (Go version)&lt;/h3&gt;
-
-&lt;p&gt;After using my Scala version of the API for a couple years (see the next side project below), I wanted an easier way to play with command-line apps. This led me to Go. I learned Go and had an alternate version of the API working in short order. Building with Go was a much simpler experience than Scala. It&amp;rsquo;s a great option for solving a lot of different kinds of problems.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/ecopony/gamedayapi&#34;&gt;MLB Gameday API (in Go)&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;mlb-gameday-api-scala-version:25ea7f7c6471d04306c4889ea469f667&#34;&gt;MLB Gameday API (Scala version)&lt;/h3&gt;
-
-&lt;p&gt;Wanting to learn Scala, and wanting to play with the free data that MLB makes available for fans to use, I developed an API to MLB Gameday using Scala. Scala has some cool features, the ability to do OO and more functional programming is nice. The language and the ecosystem is pretty complex, though. It takes a lot of room in your head, and can make some simple things harder than they need to be.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/ecopony/scala-gameday-api&#34;&gt;MLB Gameday API (in Scala)&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>skills</title>
-      <link>http://ecopony.github.io/posts/skills/</link>
-      <pubDate>Thu, 03 Sep 2015 15:52:09 -0700</pubDate>
-      
-      <guid>http://ecopony.github.io/posts/skills/</guid>
-      <description>&lt;p&gt;Here are a few, anyway.&lt;/p&gt;
-
-&lt;p&gt;Languages: Java, Ruby, Go, Scala, JavaScript, TypeScript, Dart, R, SQL&lt;/p&gt;
-
-&lt;p&gt;Libraries/Frameworks: Ruby on Rails, Play, Jersey, Ext JS, Angular 2, Node.js, Spring, Hibernate, AWS SDKs, jQuery&lt;/p&gt;
-
-&lt;p&gt;Build/Ops: Git, AWS, Chef, Puppet, Jenkins, Bamboo, Google Analytics, Maven, Rake, Capistrano&lt;/p&gt;
-
-&lt;p&gt;Other stuff: RabbitMQ, integration patterns, REST API design, Selenium, PostgreSQL, MySQL, HTML, CSS, XML, XSLT, Haml, Sass, Bootstrap&lt;/p&gt;
-
-&lt;p&gt;Techniques: Lean, agile, Kanban, lean startup, impact mapping, test-driven development, continuous integration and deployment&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>interests</title>
-      <link>http://ecopony.github.io/posts/interests/</link>
-      <pubDate>Thu, 03 Sep 2015 08:10:33 -0700</pubDate>
-      
-      <guid>http://ecopony.github.io/posts/interests/</guid>
-      <description>
-
-&lt;p&gt;I have many interests, and they are constantly shifting in priority. This is just a snapshot of a top few things at the moment.&lt;/p&gt;
-
-&lt;h4 id=&#34;amazon-web-services:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Amazon Web Services&lt;/h4&gt;
-
-&lt;p&gt;The rate at which AWS rolls out new services and iterates on existing ones boggles the mind. The Gateway API, Lambda and DynamoDB hold my gaze currently.&lt;/p&gt;
-
-&lt;h4 id=&#34;client-side-development:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Client-side development&lt;/h4&gt;
-
-&lt;p&gt;Web Components, Polymer, Angular 2, TypeScript, Dart, React&amp;hellip; the area of client-side technology is absolutely crazy right now. It&amp;rsquo;s fascinating and frustrating. Targets, libraries, frameworks are all moving so fast. Trying to pick your horse to get you through the next year or so is a task that will make your head spin.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been bouncing all over the place with the above technology, trying to decide what I should build my next round of side projects on. I&amp;rsquo;m liking the direction of Web Components, and am favoring tools and frameworks that are either working to implement what the standard looks like, or look like what the standard looks like.&lt;/p&gt;
-
-&lt;h4 id=&#34;offline-first-nobackend:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Offline-first / #nobackend&lt;/h4&gt;
-
-&lt;p&gt;Combining the previous two interests, I want to delve deeper into building client-side apps that go through the AWS Gateway API, through to AWS Lambda and Dynamo DB.&lt;/p&gt;
-
-&lt;h4 id=&#34;statistics:9ff85ae240172bb97ce520c762b5dcae&#34;&gt;Statistics&lt;/h4&gt;
-
-&lt;p&gt;Apache Spark looks super cool. R is awesome. Putting them together looks like it could be a powerful combination.&lt;/p&gt;
 </description>
     </item>
     
