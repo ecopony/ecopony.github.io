@@ -2,8 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ecopony.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2015-09-02T22:18:55-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2015-09-02T22:18:55-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/work-history/</loc>
+    <lastmod>2015-09-03T08:09:10-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/side-projects/</loc>
+    <lastmod>2015-09-03T15:52:20-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/skills/</loc>
+    <lastmod>2015-09-03T15:52:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/interests/</loc>
+    <lastmod>2015-09-03T08:10:33-07:00</lastmod>
   </url>
   
 </urlset>
