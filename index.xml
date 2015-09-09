@@ -6,7 +6,32 @@
     <description>Recent content on ed copony</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 08 Sep 2015 23:25:23 -0700</lastBuildDate>
     <atom:link href="http://ecopony.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first</title>
+      <link>http://ecopony.github.io/post/first/</link>
+      <pubDate>Tue, 08 Sep 2015 23:25:23 -0700</pubDate>
+      
+      <guid>http://ecopony.github.io/post/first/</guid>
+      <description>&lt;p&gt;First!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://ecopony.github.io/about/</link>
+      <pubDate>Tue, 08 Sep 2015 23:24:57 -0700</pubDate>
+      
+      <guid>http://ecopony.github.io/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;a-headline:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;A headline&lt;/h2&gt;
+
+&lt;p&gt;Some Content&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
