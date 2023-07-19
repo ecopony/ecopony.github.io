@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <title>Research</title>
+        <meta charset="utf-8" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
+
+        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
+</head>
+
+<body id="index" class="home">
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="/">Ed Copony <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/pages/work-history.html">Work History</a></li>
+                <li><a href="/pages/side-projects.html">Side Projects</a></li>
+                <li><a href="/pages/skills-and-education.html">Skills and Education</a></li>
+                <li><a href="/pages/geospatial-and-cartography.html">Geospatial and Cartography</a></li>
+                <li class="active"><a href="/pages/research.html">Research</a></li>
+
+              </ul>
+            </div>
+
+    <h1>Research</h1>
+    
+
+    <p><img alt="Pelican" src="/images/research-banner.png"></p>
+<h2>Considering climate change in the strategic planning of beaver-oriented stream restoration projects</h2>
+<p>For my master's degree in Geographic Information Science I had to complete a research component. After exploring a number of potential ideas, I settled on the topic of river restoration project planning, specifically river restoration projects involving the use of beavers. This is a brief overview of my project.</p>
+<h3>Introduction</h3>
+<p>In recent years the American West has faced increased severity of wildfires and drought because of climate change. Efforts to find effective, low-cost methods for mitigating the impact of these trends have led some humans into partnerships with beavers. Beavers, a keystone species also known as ecosystem engineers, provide numerous beneficial ecological services to the areas they inhabit. Some of these benefits, including reconnecting streams with their floodplains and increasing groundwater recharge and storage, can help mitigate the impact of climate change. Given these benefits, the practice of orienting stream-restoration projects around the introduction or re-introduction of beavers has become increasingly common.</p>
+<p>While the practice of employing beavers for restoration projects has became popular, projects are not always successful. Beavers can't just survive anywhere. Beavers need more than a source of water. They also need other conditions to be met such as a favorable stream gradient and enough suitable vegetation to survive. Proximity to humans, their roads and property, are also important factors to their success.</p>
+<p>Scientists have developed models for predicting where beavers might be successful. These models consider different factors to determine the likelihood that an area could support beavers or that stream segments could support beaver dams. Use of these models is thought to improve the likelihood of restoration-project success if used thoughtfully.</p>
+<p>One such model is the Beaver Restoration Asssessment Tool (BRAT). BRAT was initially developed in concert with <a href="https://www.researchgate.net/publication/285590037_Modeling_the_capacity_of_riverscapes_to_support_beaver_dams">a study</a> in 2017 and has since been <a href="https://github.com/Riverscapes/riverscapes-tools">open-sourced</a>. It is maintained by a group called <a href="https://riverscapes.net/">The Riverscapes Consortium</a>. BRAT uses publically available data to produce estimates for how many beaver dams that stream segments and their surrounding area can support. It takes into account the stream gradient, availability of dam-building materials, whether a dam could be constructed at baseflow, and whether a dam could survive in typical flood conditions.</p>
+<p>Below is an example of one of BRAT's core outputs: estimations of beaver-dam capacity per stream segment measured in dams per mile of stream. This example covers the Tualatin River Watershed in the Portland (OR) Metropolitan Area.</p>
+<div style='float: right'>
+    <img src='/images/density.png' width=720 alt='Dam Density' />
+    <p style='text-align: center; font-style: italic'>Example BRAT output</p>
+</div>
+
+<p>BRAT also produces management outputs that estimate limiting factors to beaver dam opportunities, risk categories, and the measure of effort needed to complete restoration or conservation efforts in each segment. BRAT is an impressive tool. It is still under active development and continues to improve. The fact that it is open-source software is a huge bonus as it allows anyone to download it, run it, and make contributions.</p>
+<h3>Research objective</h3>
+<p>BRAT helps us decide where beaver-oriented restoration projects could be successful. But what about deciding where beaver-oriented restoration project should be planned in the first place?</p>
+<p>In the American West, beavers' ecological engineering prowess has the opportunity to help mitigate the impacts of climate change, mainly drought and wildfire. Strategic planning for beaver-oriented restoration or conservation efforts could take into account where beavers are needed most: areas already suffering from drought and wildfires or along the frontiers of those areas. Additionally, strategic planning could layer on additional risk factors such as the existence of predators or areas with measurable forest loss.</p>
+<p>The research objective for my study was to build upon the outputs of BRAT, incorpoarate more strategic-level data, and create a prototype for a tool that could be used to guide policy and decision-malking on restoration and conservation work centered around beavers that includes the additional context of the impacts of climate change and regional project risks.</p>
+<h3>Study area</h3>
+<p>My study focused on the watersheds of western Oregon. This area is large enough that a strategic planning tool incorporating it could be useful to policymakers in the state government or regional cooperative groups. It also contains enough variety of landscapes and conditions to illustrate varying output in different parts of the study area. It's also my backyard.</p>
+<p><img src='/images/study-area.png' width=680 style='display: block; margin-left: auto; margin-right: auto' alt='Study Area' /></p>
+<h3>Data sources</h3>
+<p>I wanted to combine three categories of data: restoration-project opportunities, strategic climate-impact data, and strategic project-risk data. I generated restoration-project opportunity data was generated by running BRAT for all of the watersheds in the study area. For strategic climate-impact data I used wildfire risk data from the <a href="https://spatialdata.oregonexplorer.info/geoportal/details;id=d437b41e36254af4a97ceda3a0392632">2018 Pacific Northwest Quantitative Wildfire Risk Assessment</a> and drought data from the <a href="https://droughtmonitor.unl.edu/DmData/GISData.aspx">U.S. Drought Monitor</a>. For project-risk data I used predator-range data from the <a href="https://www.sciencebase.gov/catalog/item/59f5e250e4b063d5d307dde5">U.S. Geological Survey</a> and forest loss data from the <a href="https://storage.googleapis.com/earthenginepartners-hansen/GFC-2021-v1.9/Hansen_GFC-2021-v1.9_lossyear_50N_130W.tif">Hansen/UMD/Google/USGS/NASA Global Forest Change partnership</a>.</p>
+<h3>Process overview</h3>
+<p>The high-level steps for producing the strategic-planning prototype tool were the collection/generation of the data, the normalization of the collected and generated data for analysis and comparison, the generation of strategic and risk scores, and the assembly of the normalized data in an interactive map.</p>
+<p>The approach to data preparation was to normalize the data in a way that would allow it to be layered and symbolized on an interactive map in a cohesive and meaningful way. To normalize the data, each category of data was joined with a tessellation layer of transverse hexagons each covering 100 sq km of the study area. This allowed for all categories of data to be analyzed and compared over uniform areas. An example is shown below.</p>
+<p><img src='/images/tualatin-opportunities.png' width=800 style='display: block; margin-left: auto; margin-right: auto' alt='Study Area' /></p>
+<h3>Results</h3>
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Built with <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>. &copy; 2008-2022 Ed Copony.
+                    </address>
+          </div>
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="/theme/js/libs/gumby.min.js"></script>
+  <script src="/theme/js/plugins.js"></script>
+</body>
+</html>
