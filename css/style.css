@@ -1,0 +1,605 @@
+/*
+ * Color palette inspired by the Luckiamute River Watershed map
+ * Deep navy, rich teal, luminous cyan
+ */
+
+:root {
+    --color-bg-dark: #0a1628;
+    --color-bg: #0d1f3c;
+    --color-bg-light: #132744;
+    --color-teal: #1a5f7a;
+    --color-teal-light: #2d7d9a;
+    --color-cyan: #4ecdc4;
+    --color-cyan-glow: #6ee7df;
+    --color-text: #e8f4f8;
+    --color-text-muted: #8ba4b4;
+    --color-text-dim: #5a7a8a;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1rem 0;
+    background: linear-gradient(to bottom, var(--color-bg-dark) 0%, transparent 100%);
+    transition: background 0.3s ease;
+}
+
+.nav.scrolled {
+    background: rgba(10, 22, 40, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-cyan);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-cyan);
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background:
+        radial-gradient(ellipse at 30% 20%, rgba(26, 95, 122, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(78, 205, 196, 0.15) 0%, transparent 40%),
+        linear-gradient(to bottom, var(--color-bg-dark) 0%, var(--color-bg) 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/luckiamute-watershed.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 300;
+    color: var(--color-cyan);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.hero-tagline {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-scroll span {
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.scroll-indicator {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--color-cyan), transparent);
+    animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(0.8); }
+    50% { opacity: 1; transform: scaleY(1); }
+}
+
+/* Sections */
+.section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--color-cyan);
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 2rem;
+    height: 1px;
+    background: var(--color-cyan);
+}
+
+.section-intro {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+/* About */
+.about {
+    background: var(--color-bg);
+}
+
+.about-content {
+    display: grid;
+    gap: 3rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.about-text .lead {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.about-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.link-btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-teal);
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    background: var(--color-teal);
+    border-color: var(--color-teal);
+}
+
+/* Maps Gallery */
+.maps {
+    background: var(--color-bg-dark);
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.map-card {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.map-card-featured {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+}
+
+.map-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.map-card:hover img {
+    transform: scale(1.05);
+}
+
+.map-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(10, 22, 40, 0.95) 0%, transparent 100%);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.map-card:hover .map-card-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.map-card-overlay h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: var(--color-text);
+}
+
+.map-card-overlay p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+/* Experience */
+.experience {
+    background: var(--color-bg);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.experience-heading {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-teal-light);
+    margin-bottom: 1.5rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-bg-light);
+}
+
+.job:last-of-type {
+    border-bottom: none;
+}
+
+.job-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.job-company {
+    color: var(--color-cyan);
+    font-size: 0.9rem;
+}
+
+.job-period {
+    font-size: 0.8rem;
+    color: var(--color-text-dim);
+    letter-spacing: 0.1em;
+}
+
+.job-description {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.education {
+    margin-bottom: 1.5rem;
+}
+
+.degree {
+    display: block;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+}
+
+.school {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill {
+    padding: 0.4rem 0.8rem;
+    background: var(--color-bg-light);
+    border-radius: 2px;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.05em;
+}
+
+/* Writing */
+.writing {
+    background: var(--color-bg-dark);
+}
+
+.writing-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.topic {
+    padding: 1.5rem;
+    background: var(--color-bg);
+    border-left: 2px solid var(--color-teal);
+    transition: border-color 0.3s ease;
+}
+
+.topic:hover {
+    border-color: var(--color-cyan);
+}
+
+.topic h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.topic p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--color-teal);
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: var(--color-teal-light);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    background: var(--color-bg-dark);
+    border-top: 1px solid var(--color-bg-light);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    color: var(--color-text-dim);
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-cyan);
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 22, 40, 0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: var(--color-cyan);
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+}
+
+.lightbox-caption h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.lightbox-caption p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .map-card-featured {
+        grid-column: span 1;
+        aspect-ratio: 4/3;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .map-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

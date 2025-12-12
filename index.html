@@ -1,118 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-        <title>Ed Copony</title>
-        <meta charset="utf-8" />
-
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-
-        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
-
-        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
-
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed Copony | Software Developer & Mapmaker</title>
+    <meta name="description" content="Software developer and cartographer based in the Pacific Northwest. 25+ years in software, Master's in GIS.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#writing">Writing</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<body id="index" class="home">
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ed Copony</h1>
+            <p class="hero-subtitle">Software Developer & Mapmaker</p>
+            <p class="hero-tagline">Building software for 25 years. Making maps because&nbsp;I&nbsp;can't&nbsp;stop.</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
 
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Software developer based in the Pacific Northwest with a passion for maps, data, and understanding the world through geography.</p>
+                    <p>By day, I build software. By night (and weekends), I create maps. I earned my Master's degree in Geographic Information Science in 2023, and I've been exploring the intersection of code and cartography ever since.</p>
+                    <p>I'm particularly interested in terrain visualization, watershed analysis, and using code to generate beautiful, data-driven maps. I write about my mapping adventures on Medium.</p>
+                </div>
+                <div class="about-links">
+                    <a href="https://github.com/ecopony" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ecopony/" class="link-btn" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://medium.com/@edinspace" class="link-btn" target="_blank" rel="noopener">Medium</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
+    <section id="maps" class="section maps">
+        <div class="container">
+            <h2 class="section-title">Maps</h2>
+            <p class="section-intro">A selection of cartographic work from my ongoing exploration of GIS, terrain visualization, and data-driven mapping.</p>
 
-        <div class="row">
+            <div class="map-grid">
+                <div class="map-card map-card-featured">
+                    <img src="images/luckiamute-watershed.png" alt="Luckiamute River Watershed" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Luckiamute River Watershed</h3>
+                        <p>Administrative boundary map with terrain hillshade</p>
+                    </div>
+                </div>
 
-          <header id="banner" class="body">
-                  <h1><a href="/">Ed Copony <strong></strong></a></h1>
-          </header><!-- /#banner -->
+                <div class="map-card">
+                    <img src="images/relative-elevation-model.png" alt="Relative Elevation Model" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Relative Elevation Model</h3>
+                        <p>REM visualization of river confluence</p>
+                    </div>
+                </div>
 
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href="/">Home</a></li>
+                <div class="map-card">
+                    <img src="images/crater-lake-ambient.png" alt="Crater Lake with Ambient Occlusion" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Crater Lake, Oregon</h3>
+                        <p>Terrain with ambient occlusion layers</p>
+                    </div>
+                </div>
 
-                <li><a href="/pages/work-history.html">Work History</a></li>
-                <li><a href="/pages/skills-and-education.html">Skills and Education</a></li>
-                <li><a href="/pages/side-projects.html">Side Projects</a></li>
-                <li><a href="/pages/geospatial-and-cartography.html">Geospatial and Cartography</a></li>
+                <div class="map-card">
+                    <img src="images/beaver-restoration.png" alt="Beaver Restoration Opportunities" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Beaver Restoration</h3>
+                        <p>Hexagonal tessellation analysis</p>
+                    </div>
+                </div>
 
-              </ul>
+                <div class="map-card">
+                    <img src="images/vintage-topo-hillshade.png" alt="Vintage Topographic Map with Hillshade" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Vintage Topo + Hillshade</h3>
+                        <p>USGS quad enhanced with modern hillshade</p>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <img src="images/restoration-opportunities.png" alt="Watershed Restoration Opportunities" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>Restoration Opportunities</h3>
+                        <p>Watershed series analysis</p>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <img src="images/forest-loss-h3.png" alt="PNW Forest Loss H3 Visualization" loading="lazy">
+                    <div class="map-card-overlay">
+                        <h3>PNW Forest Loss</h3>
+                        <p>Interactive H3 hexagon visualization with deck.gl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-grid">
+                <div class="experience-column">
+                    <h3 class="experience-heading">Work</h3>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span class="job-title">Principal Software Developer</span>
+                            <span class="job-company">ExecOnline</span>
+                        </div>
+                        <span class="job-period">2015 - Present</span>
+                        <p class="job-description">Leading development of enterprise learning platform. React, TypeScript, Ruby, Python, AWS.</p>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <span class="job-title">Software Engineer</span>
+                            <span class="job-company">Fidelity Life / Jama Software / Others</span>
+                        </div>
+                        <span class="job-period">1999 - 2015</span>
+                        <p class="job-description">Full-stack development across fintech, enterprise software, and startups.</p>
+                    </div>
+                </div>
+
+                <div class="experience-column">
+                    <h3 class="experience-heading">Education</h3>
+
+                    <div class="education">
+                        <span class="degree">M.S. Geographic Information Science</span>
+                        <span class="school">Northwest Missouri State University</span>
+                    </div>
+
+                    <div class="education">
+                        <span class="degree">B.A. History</span>
+                        <span class="school">University of Virginia</span>
+                    </div>
+
+                    <h3 class="experience-heading" style="margin-top: 2rem;">Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill">Python</span>
+                        <span class="skill">TypeScript</span>
+                        <span class="skill">Ruby</span>
+                        <span class="skill">React</span>
+                        <span class="skill">ArcGIS Pro</span>
+                        <span class="skill">QGIS</span>
+                        <span class="skill">GeoPandas</span>
+                        <span class="skill">PostGIS</span>
+                        <span class="skill">AWS</span>
+                        <span class="skill">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing" class="section writing">
+        <div class="container">
+            <h2 class="section-title">Writing</h2>
+            <p class="section-intro">I write about cartography, GIS techniques, and the intersection of code and maps on Medium.</p>
+
+            <div class="writing-topics">
+                <div class="topic">
+                    <h3>Geospatial + AI</h3>
+                    <p>Exploring Claude Agent SDK and MCP servers for geospatial workflows</p>
+                </div>
+                <div class="topic">
+                    <h3>Watershed Series</h3>
+                    <p>Deep dives into watershed analysis, REMs, and restoration planning</p>
+                </div>
+                <div class="topic">
+                    <h3>Terrain Visualization</h3>
+                    <p>Hillshade techniques, ambient occlusion, and beautiful terrain maps</p>
+                </div>
+                <div class="topic">
+                    <h3>Python + Maps</h3>
+                    <p>Generating stylized maps programmatically with GeoPandas and Matplotlib</p>
+                </div>
             </div>
 
-<section id="content">
+            <a href="https://medium.com/@edinspace" class="cta-btn" target="_blank" rel="noopener">Read on Medium</a>
+        </div>
+    </section>
 
-
-
-   <div class="row">
-        <div class="eleven columns">
-            <h1>Home</h1>
-            <p>Software developer based in the Pacific Northwest. 🌲</p>
-            <p>Work for <a href="https://www.execonline.com">ExecOnline</a>.</p>
-            <p>Play w/Python, Typescript, F#, data science, geospatial.</p>
-            
-                 <ol id="post-list">
-                </ol><!-- /#posts-list -->
-
-        </div><!-- /.eleven.columns -->
-        
-<div class="three columns">
-
-  
-
-
-
-
-<nav class="widget">
-  <h4>Social</h4>
-  <ul class="blank">
-    <li><a href="https://github.com/ecopony">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/ecopony/">LinkedIn</a></li>
-  </ul>
-</nav>
-
-</div> </div><!-- /.row -->
-
-</section><!-- /#content -->
-
-       </div><!-- /.row -->
-    </div><!-- /.container -->
-
-
-       <div class="container.nopad bg">
-
-    
-        <footer id="credits" class="row">
-          <div class="seven columns left-center">
-
-                   <address id="about" class="vcard body">
-                    Built with <a href="http://getpelican.com/">Pelican</a> and <a href="http://python.org">Python</a>. &copy; 2008-2022 Ed Copony.
-                    </address>
-          </div>
-
-          <div class="seven columns">
-            <div class="row">
-              <ul class="socbtns">
-
-
-
-
-
-              </ul>
-            </div>
-          </div>
-        </footer>
-
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" src="" alt="">
+        <div class="lightbox-caption">
+            <h3></h3>
+            <p></p>
+        </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ed Copony. Built with curiosity and caffeine.</p>
+            <div class="footer-links">
+                <a href="https://github.com/ecopony" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/ecopony/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://medium.com/@edinspace" target="_blank" rel="noopener">Medium</a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="/theme/js/libs/gumby.min.js"></script>
-  <script src="/theme/js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
