@@ -152,13 +152,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.hero-tagline {
-    font-size: 1.1rem;
-    color: var(--color-text-muted);
-    max-width: 500px;
-    margin: 0 auto;
-}
-
 .hero-scroll {
     position: absolute;
     bottom: 3rem;
